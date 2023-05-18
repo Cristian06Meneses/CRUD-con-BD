@@ -111,7 +111,9 @@ namespace PantallaMaestra
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            // TODO: esta línea de código carga datos en la tabla 'db_MaestroDataSet.tbl_persona' Puede moverla o quitarla según sea necesario.
+            this.tbl_personaTableAdapter.Fill(this.db_MaestroDataSet.tbl_persona);
+
         }
 
         private void btn_consultar_Click(object sender, EventArgs e)
