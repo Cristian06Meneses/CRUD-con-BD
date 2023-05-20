@@ -64,6 +64,8 @@
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_cerrar = new System.Windows.Forms.Button();
+            this.btn_siguiente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_personaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_MaestroDataSet)).BeginInit();
@@ -218,10 +220,11 @@
             this.nombreDataGridViewTextBoxColumn,
             this.edadDataGridViewTextBoxColumn,
             this.correoDataGridViewTextBoxColumn});
+            this.dgv_1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgv_1.DataSource = this.tbl_personaBindingSource;
             this.dgv_1.Location = new System.Drawing.Point(51, 241);
             this.dgv_1.Name = "dgv_1";
-            this.dgv_1.Size = new System.Drawing.Size(725, 197);
+            this.dgv_1.Size = new System.Drawing.Size(535, 197);
             this.dgv_1.TabIndex = 12;
             this.dgv_1.Visible = false;
             this.dgv_1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_1_CellClick);
@@ -404,12 +407,45 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 28);
             // 
+            // btn_cerrar
+            // 
+            this.btn_cerrar.BackColor = System.Drawing.Color.Silver;
+            this.btn_cerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cerrar.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btn_cerrar.FlatAppearance.BorderSize = 3;
+            this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cerrar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cerrar.Location = new System.Drawing.Point(629, 401);
+            this.btn_cerrar.Name = "btn_cerrar";
+            this.btn_cerrar.Size = new System.Drawing.Size(147, 37);
+            this.btn_cerrar.TabIndex = 15;
+            this.btn_cerrar.Text = "CERRAR SESION";
+            this.btn_cerrar.UseVisualStyleBackColor = false;
+            this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
+            // 
+            // btn_siguiente
+            // 
+            this.btn_siguiente.BackColor = System.Drawing.Color.Yellow;
+            this.btn_siguiente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_siguiente.FlatAppearance.BorderColor = System.Drawing.Color.Gold;
+            this.btn_siguiente.FlatAppearance.BorderSize = 3;
+            this.btn_siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_siguiente.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_siguiente.Location = new System.Drawing.Point(629, 358);
+            this.btn_siguiente.Name = "btn_siguiente";
+            this.btn_siguiente.Size = new System.Drawing.Size(147, 37);
+            this.btn_siguiente.TabIndex = 16;
+            this.btn_siguiente.Text = "IR A M/DETALLE";
+            this.btn_siguiente.UseVisualStyleBackColor = false;
+            // 
             // FrmPMaestro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_siguiente);
+            this.Controls.Add(this.btn_cerrar);
             this.Controls.Add(this.btn_limpiar);
             this.Controls.Add(this.btn_consultar);
             this.Controls.Add(this.btn_eliminar);
@@ -475,6 +511,8 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.Button btn_cerrar;
+        private System.Windows.Forms.Button btn_siguiente;
     }
 }
 

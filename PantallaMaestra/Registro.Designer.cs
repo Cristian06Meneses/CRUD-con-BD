@@ -124,6 +124,7 @@
             // 
             // txtNombre
             // 
+            this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNombre.Location = new System.Drawing.Point(69, 179);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
@@ -134,6 +135,7 @@
             // lblLINK
             // 
             this.lblLINK.AutoSize = true;
+            this.lblLINK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLINK.Location = new System.Drawing.Point(113, 425);
             this.lblLINK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLINK.Name = "lblLINK";
@@ -145,6 +147,7 @@
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRegistrar.Location = new System.Drawing.Point(71, 383);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrar.Name = "btnRegistrar";

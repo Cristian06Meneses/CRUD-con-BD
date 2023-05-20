@@ -86,6 +86,7 @@
             // lblLINK
             // 
             this.lblLINK.AutoSize = true;
+            this.lblLINK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblLINK.Location = new System.Drawing.Point(70, 317);
             this.lblLINK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLINK.Name = "lblLINK";
@@ -97,6 +98,7 @@
             // 
             // btnEntrar
             // 
+            this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEntrar.Location = new System.Drawing.Point(70, 278);
             this.btnEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEntrar.Name = "btnEntrar";

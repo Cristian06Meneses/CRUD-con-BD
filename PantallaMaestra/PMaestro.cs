@@ -123,6 +123,13 @@ namespace PantallaMaestra
             txt_edad.ReadOnly = true;
             txt_correo.ReadOnly = true;
 
+            txt_cedula.Visible = false;
+            txt_nombre.Visible = false;
+            txt_edad.Visible = false;
+            txt_correo.Visible = false;
+
+            btn_crear.Visible = false;
+
             Conexion con = new Conexion();
 
             dgv_1.DataSource = con.vertabla();
@@ -296,6 +303,11 @@ namespace PantallaMaestra
                 txt_edad.Text = dgv_1.CurrentRow.Cells[2].Value.ToString();
                 txt_correo.Text = dgv_1.CurrentRow.Cells[3].Value.ToString();
 
+                txt_cedula.Visible = true;
+                txt_nombre.Visible = true;
+                txt_edad.Visible = true;
+                txt_correo.Visible = true;
+
                 btn_editar.Visible = true;
                 btn_eliminar.Visible = true;
                 btn_crear.Visible = false;
@@ -322,7 +334,19 @@ namespace PantallaMaestra
             btn_editar.Visible = false;
             btn_eliminar.Visible = false;
 
+            txt_cedula.Visible = true;
+            txt_nombre.Visible = true;
+            txt_edad.Visible = true;
+            txt_correo.Visible = true;
+
             dgv_1.Visible = false;
+        }
+
+        private void btn_cerrar_Click(object sender, EventArgs e)
+        {
+            FrmLogin login = new FrmLogin();
+            login.Show();
+            this.Hide();
         }
     }
 }

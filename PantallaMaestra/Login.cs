@@ -51,7 +51,26 @@ namespace PantallaMaestra
 
                 if (entrar == true)
                 {
-                    MessageBox.Show("Usuario ingresado correctamente :D");
+                    if (txtCorreo.Text == "admin123@gmail.com" && txtContraseña.Text == "1000")
+                    {
+                        DialogResult r = MessageBox.Show("Bienvenido Admin, desea ingresar a la pestaña de Maestro?",
+                        "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                        if (r == DialogResult.Yes)
+                        {
+                            FrmPMaestro maestro = new FrmPMaestro();
+                            maestro.Show();
+                            this.Hide();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuario ingresado correctamente :D");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuario ingresado correctamente :D");
+                    }
 
                     contador = 0;
 
