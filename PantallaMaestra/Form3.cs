@@ -102,7 +102,7 @@ namespace PantallaMaestra
 
         private void lblLINK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+            form2
         }
     }
 }
