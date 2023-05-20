@@ -14,7 +14,7 @@ namespace PantallaMaestra
     /// Esta es la pantalla principal con todos los mecanismos de crear, editar, eliminar, y consultar a la
     /// base de datos(sql server)
     /// </summary>
-    public partial class Form1 : Form
+    public partial class FrmPMaestro : Form
     {
         int cedula;
         string nombre;
@@ -22,7 +22,7 @@ namespace PantallaMaestra
         string correo;
         int error = 0;
 
-        public Form1()
+        public FrmPMaestro()
         {
             InitializeComponent();
 

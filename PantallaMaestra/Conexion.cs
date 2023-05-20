@@ -108,5 +108,27 @@ namespace PantallaMaestra
 
             return r;
         }
+
+        public bool Verificar(string correo, string cedula)
+        {
+            bool resultado = false;
+            string query = "Select correo, cedula from tbl_persona where correo = '" + correo + "' and cedula = '" + cedula + "'";
+
+            cmd = new SqlCommand(query, conec);
+
+            dr_lector = cmd.ExecuteReader();
+            bool entrar = dr_lector.HasRows;
+
+            if (entrar)
+            {
+                resultado = true;
+            }
+            else
+            {
+                resultado = false;
+            }
+
+            return resultado;
+        }
     }
 }

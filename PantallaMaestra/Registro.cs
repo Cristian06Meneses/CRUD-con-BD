@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PantallaMaestra
 {
-    public partial class Form3 : Form
+    public partial class FrmRegistro : Form
     {
         int cedula;
         string nombre;
         int edad;
         string correo;
         int error = 0;
-        public Form3()
+        public FrmRegistro()
         {
             InitializeComponent();
         }

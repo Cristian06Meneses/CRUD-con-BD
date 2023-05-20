@@ -1,6 +1,6 @@
 ﻿namespace PantallaMaestra
 {
-    partial class Form3
+    partial class FrmRegistro
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             System.Windows.Forms.Label lblCorreo;
             System.Windows.Forms.Label lblNombre;
             System.Windows.Forms.Label lblEdad;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistro));
             this.grpRegistro = new System.Windows.Forms.GroupBox();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
@@ -104,7 +104,7 @@
             this.grpRegistro.Controls.Add(lblCorreo);
             this.grpRegistro.Controls.Add(this.txtCorreo);
             this.grpRegistro.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpRegistro.Location = new System.Drawing.Point(240, 38);
+            this.grpRegistro.Location = new System.Drawing.Point(242, 11);
             this.grpRegistro.Margin = new System.Windows.Forms.Padding(2);
             this.grpRegistro.Name = "grpRegistro";
             this.grpRegistro.Padding = new System.Windows.Forms.Padding(2);
@@ -182,14 +182,14 @@
             this.txtCorreo.Size = new System.Drawing.Size(187, 26);
             this.txtCorreo.TabIndex = 9;
             // 
-            // Form3
+            // FrmRegistro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 491);
             this.Controls.Add(this.grpRegistro);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "FrmRegistro";
+            this.Text = "REGISTRO";
             this.grpRegistro.ResumeLayout(false);
             this.grpRegistro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img1)).EndInit();
