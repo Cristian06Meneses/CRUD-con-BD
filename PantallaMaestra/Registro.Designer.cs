@@ -120,7 +120,6 @@
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(187, 26);
             this.txtEdad.TabIndex = 18;
-            this.txtEdad.UseSystemPasswordChar = true;
             // 
             // txtNombre
             // 
@@ -130,7 +129,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(187, 26);
             this.txtNombre.TabIndex = 16;
-            this.txtNombre.UseSystemPasswordChar = true;
             // 
             // lblLINK
             // 
@@ -175,7 +173,6 @@
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(187, 26);
             this.txtCedula.TabIndex = 11;
-            this.txtCedula.UseSystemPasswordChar = true;
             // 
             // txtCorreo
             // 
