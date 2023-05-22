@@ -437,6 +437,7 @@
             this.btn_siguiente.TabIndex = 16;
             this.btn_siguiente.Text = "IR A M/DETALLE";
             this.btn_siguiente.UseVisualStyleBackColor = false;
+            this.btn_siguiente.Click += new System.EventHandler(this.btn_siguiente_Click);
             // 
             // FrmPMaestro
             // 

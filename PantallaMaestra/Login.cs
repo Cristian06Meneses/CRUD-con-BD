@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace PantallaMaestra
 {
+    /// <summary>
+    /// Esta es la pestaña de login donde se puede ingresar a la aplicacion.
+    /// </summary>
     public partial class FrmLogin : Form
     {
         string correo = "";

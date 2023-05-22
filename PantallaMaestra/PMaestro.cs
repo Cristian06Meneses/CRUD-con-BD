@@ -11,8 +11,7 @@ using System.Windows.Forms;
 namespace PantallaMaestra
 {
     /// <summary>
-    /// Esta es la pantalla principal con todos los mecanismos de crear, editar, eliminar, y consultar a la
-    /// base de datos(sql server)
+    /// Esta es la pestaña de maestro donde el solo el admin puede aplicar CRUD con los usuarios.
     /// </summary>
     public partial class FrmPMaestro : Form
     {
@@ -346,6 +345,13 @@ namespace PantallaMaestra
         {
             FrmLogin login = new FrmLogin();
             login.Show();
+            this.Hide();
+        }
+
+        private void btn_siguiente_Click(object sender, EventArgs e)
+        {
+            FrmPEsclavo esclavo = new FrmPEsclavo();
+            esclavo.Show();
             this.Hide();
         }
     }

@@ -11,9 +11,8 @@ using System.Windows.Forms;
 namespace PantallaMaestra
 {
     /// <summary>
-    /// Esta es la clase de conexion la cual conecta el programa con la base de datos en sql server y me hace los
-    /// procesos que tengan que ver con ella como registro, creacion, eliminacion, edicion, y
-    /// toma de toda la tabla
+    /// Esta es la clase de conexion la cual conecta el programa con la base de datos en sql server
+    /// y hace los procesos que tengan que ver con la base de datos.
     /// </summary>
     internal class Conexion
     {
@@ -54,19 +53,6 @@ namespace PantallaMaestra
             }
 
             return r;
-        }
-
-        public DataTable vertabla()
-        {
-            DataTable tablas = new DataTable();
-            string query = " Select * from tbl_persona";
-            cmd = new SqlCommand(query, conec);
-
-            SqlDataAdapter data = new SqlDataAdapter(cmd);
-
-            data.Fill(tablas);
-
-            return tablas;
         }
 
         public bool editar(int cedula, string nombre, int edad, string correo)
@@ -112,7 +98,7 @@ namespace PantallaMaestra
         public bool Verificar(string correo, string cedula)
         {
             bool resultado = false;
-            string query = "Select correo, cedula from tbl_persona where correo = '" + correo + "' and cedula = '" + cedula + "'";
+            string query = "Select correo, cedula from tbl_persona where correo = '" + correo + "' and cedula = " + cedula + "";
 
             cmd = new SqlCommand(query, conec);
 
@@ -129,6 +115,74 @@ namespace PantallaMaestra
             }
 
             return resultado;
+        }
+
+        public DataTable vertabla()
+        {
+            DataTable tablas = new DataTable();
+            string query = " Select * from tbl_persona";
+            cmd = new SqlCommand(query, conec);
+
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+
+            data.Fill(tablas);
+
+            return tablas;
+        }
+
+        public DataTable tablaesclavo(int cedula)
+        {
+            DataTable tablas = new DataTable();
+            string query = " Select abono, fecha from tbl_esclavo where cedula = " + cedula + "";
+            cmd = new SqlCommand(query, conec);
+
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+
+            data.Fill(tablas);
+
+            return tablas;
+        }
+
+        public bool verif_esclavo(int cedula)
+        {
+            bool existe = false;
+            string query = "select cedula from tbl_persona where cedula = " + cedula + "";
+
+            cmd = new SqlCommand(query, conec);
+
+            dr_lector = cmd.ExecuteReader();
+            bool entrar = dr_lector.HasRows;
+
+            if (entrar)
+            {
+                existe = false;
+            }
+            else
+            {
+                existe = true;
+            }
+
+            return existe;
+        }
+
+        public bool agregar_esclavo(int cedula, int abono)
+        {
+            bool agregado = false;
+            string query = "insert into tbl_esclavo values(" + cedula + ", " + abono + ", getdate())";
+            cmd = new SqlCommand(query, conec);
+
+            try
+            {
+                cmd.ExecuteReader();
+
+                agregado = true;
+            }
+            catch (Exception ex)
+            {
+                agregado = false;
+            }
+
+            return agregado;
         }
     }
 }

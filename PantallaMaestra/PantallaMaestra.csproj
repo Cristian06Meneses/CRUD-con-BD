@@ -52,6 +52,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>db_MaestroDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PEsclavo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PEsclavo.Designer.cs">
+      <DependentUpon>PEsclavo.cs</DependentUpon>
+    </Compile>
     <Compile Include="PMaestro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="PEsclavo.resx">
+      <DependentUpon>PEsclavo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PMaestro.resx">
       <DependentUpon>PMaestro.cs</DependentUpon>
     </EmbeddedResource>

@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace PantallaMaestra
 {
+    /// <summary>
+    /// Esta es la pestaña de registro donde los nuevos usuarios pueden registrarse.
+    /// </summary>
     public partial class FrmRegistro : Form
     {
         int cedula;
