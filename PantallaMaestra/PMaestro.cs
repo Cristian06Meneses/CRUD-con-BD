@@ -354,5 +354,33 @@ namespace PantallaMaestra
             esclavo.Show();
             this.Hide();
         }
+
+
+        int PosicionActual = 0;
+        private DataTable datatable;
+
+        private void bnbtnNext_Click(object sender, EventArgs e)
+        {
+            if (PosicionActual < datatable.Rows.Count - 1)
+            {
+                PosicionActual++;
+                MostrarRegistroActual();
+            }
+
+        }
+
+        private void bnbtnPrevius_Click(object sender, EventArgs e)
+        {
+            if (PosicionActual > 0)
+            {
+                PosicionActual--;
+                MostrarRegistroActual();
+            }
+
+        }
+        private void MostrarRegistroActual()
+        {
+            dgv_1.CurrentCell = dgv_1.Rows[PosicionActual].Cells[0];
+        }
     }
 }
