@@ -46,20 +46,18 @@
             // lblContraseña
             // 
             lblContraseña.AutoSize = true;
-            lblContraseña.Location = new System.Drawing.Point(67, 207);
-            lblContraseña.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblContraseña.Location = new System.Drawing.Point(89, 255);
             lblContraseña.Name = "lblContraseña";
-            lblContraseña.Size = new System.Drawing.Size(124, 19);
+            lblContraseña.Size = new System.Drawing.Size(154, 23);
             lblContraseña.TabIndex = 10;
             lblContraseña.Text = "CONTRASEÑA:";
             // 
             // lblCorreo
             // 
             lblCorreo.AutoSize = true;
-            lblCorreo.Location = new System.Drawing.Point(67, 151);
-            lblCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblCorreo.Location = new System.Drawing.Point(89, 186);
             lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new System.Drawing.Size(83, 19);
+            lblCorreo.Size = new System.Drawing.Size(104, 23);
             lblCorreo.TabIndex = 8;
             lblCorreo.Text = "CORREO:";
             // 
@@ -74,11 +72,11 @@
             this.gpnLogin.Controls.Add(lblCorreo);
             this.gpnLogin.Controls.Add(this.txtCorreo);
             this.gpnLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpnLogin.Location = new System.Drawing.Point(140, 10);
-            this.gpnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gpnLogin.Location = new System.Drawing.Point(187, 12);
+            this.gpnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gpnLogin.Name = "gpnLogin";
-            this.gpnLogin.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.gpnLogin.Size = new System.Drawing.Size(321, 375);
+            this.gpnLogin.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gpnLogin.Size = new System.Drawing.Size(428, 462);
             this.gpnLogin.TabIndex = 2;
             this.gpnLogin.TabStop = false;
             this.gpnLogin.Text = "LOGIN";
@@ -87,10 +85,9 @@
             // 
             this.lblLINK.AutoSize = true;
             this.lblLINK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblLINK.Location = new System.Drawing.Point(70, 317);
-            this.lblLINK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLINK.Location = new System.Drawing.Point(93, 390);
             this.lblLINK.Name = "lblLINK";
-            this.lblLINK.Size = new System.Drawing.Size(67, 19);
+            this.lblLINK.Size = new System.Drawing.Size(82, 23);
             this.lblLINK.TabIndex = 14;
             this.lblLINK.TabStop = true;
             this.lblLINK.Text = "Registro";
@@ -99,10 +96,10 @@
             // btnEntrar
             // 
             this.btnEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEntrar.Location = new System.Drawing.Point(70, 278);
-            this.btnEntrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEntrar.Location = new System.Drawing.Point(93, 342);
+            this.btnEntrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(186, 29);
+            this.btnEntrar.Size = new System.Drawing.Size(248, 36);
             this.btnEntrar.TabIndex = 13;
             this.btnEntrar.Text = "INGRESAR";
             this.btnEntrar.UseVisualStyleBackColor = true;
@@ -111,40 +108,40 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(117, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(156, 39);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(76, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(101, 114);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // txtContraseña
             // 
-            this.txtContraseña.Location = new System.Drawing.Point(69, 228);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtContraseña.Location = new System.Drawing.Point(92, 281);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.PasswordChar = '*';
-            this.txtContraseña.Size = new System.Drawing.Size(187, 26);
+            this.txtContraseña.Size = new System.Drawing.Size(248, 30);
             this.txtContraseña.TabIndex = 11;
             this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(70, 172);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Location = new System.Drawing.Point(93, 212);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(187, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(248, 30);
             this.txtCorreo.TabIndex = 9;
             // 
             // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 390);
+            this.ClientSize = new System.Drawing.Size(768, 480);
             this.Controls.Add(this.gpnLogin);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MinimizeBox = false;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
             this.Name = "FrmLogin";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

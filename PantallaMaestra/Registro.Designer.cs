@@ -52,40 +52,36 @@
             // lblCedula
             // 
             lblCedula.AutoSize = true;
-            lblCedula.Location = new System.Drawing.Point(67, 207);
-            lblCedula.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblCedula.Location = new System.Drawing.Point(89, 255);
             lblCedula.Name = "lblCedula";
-            lblCedula.Size = new System.Drawing.Size(79, 19);
+            lblCedula.Size = new System.Drawing.Size(99, 23);
             lblCedula.TabIndex = 10;
             lblCedula.Text = "CEDULA:";
             // 
             // lblCorreo
             // 
             lblCorreo.AutoSize = true;
-            lblCorreo.Location = new System.Drawing.Point(66, 313);
-            lblCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblCorreo.Location = new System.Drawing.Point(88, 385);
             lblCorreo.Name = "lblCorreo";
-            lblCorreo.Size = new System.Drawing.Size(83, 19);
+            lblCorreo.Size = new System.Drawing.Size(104, 23);
             lblCorreo.TabIndex = 8;
             lblCorreo.Text = "CORREO:";
             // 
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new System.Drawing.Point(67, 158);
-            lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblNombre.Location = new System.Drawing.Point(89, 194);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new System.Drawing.Size(87, 19);
+            lblNombre.Size = new System.Drawing.Size(105, 23);
             lblNombre.TabIndex = 15;
             lblNombre.Text = "NOMBRE:";
             // 
             // lblEdad
             // 
             lblEdad.AutoSize = true;
-            lblEdad.Location = new System.Drawing.Point(67, 261);
-            lblEdad.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            lblEdad.Location = new System.Drawing.Point(89, 321);
             lblEdad.Name = "lblEdad";
-            lblEdad.Size = new System.Drawing.Size(59, 19);
+            lblEdad.Size = new System.Drawing.Size(72, 23);
             lblEdad.TabIndex = 17;
             lblEdad.Text = "EDAD:";
             // 
@@ -104,40 +100,39 @@
             this.grpRegistro.Controls.Add(lblCorreo);
             this.grpRegistro.Controls.Add(this.txtCorreo);
             this.grpRegistro.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpRegistro.Location = new System.Drawing.Point(242, 11);
-            this.grpRegistro.Margin = new System.Windows.Forms.Padding(2);
+            this.grpRegistro.Location = new System.Drawing.Point(323, 14);
+            this.grpRegistro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpRegistro.Name = "grpRegistro";
-            this.grpRegistro.Padding = new System.Windows.Forms.Padding(2);
-            this.grpRegistro.Size = new System.Drawing.Size(321, 451);
+            this.grpRegistro.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpRegistro.Size = new System.Drawing.Size(428, 555);
             this.grpRegistro.TabIndex = 3;
             this.grpRegistro.TabStop = false;
             this.grpRegistro.Text = "REGISTRO";
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(69, 282);
-            this.txtEdad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEdad.Location = new System.Drawing.Point(92, 347);
+            this.txtEdad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(187, 26);
+            this.txtEdad.Size = new System.Drawing.Size(248, 30);
             this.txtEdad.TabIndex = 18;
             // 
             // txtNombre
             // 
             this.txtNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNombre.Location = new System.Drawing.Point(69, 179);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNombre.Location = new System.Drawing.Point(92, 220);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(187, 26);
+            this.txtNombre.Size = new System.Drawing.Size(248, 30);
             this.txtNombre.TabIndex = 16;
             // 
             // lblLINK
             // 
             this.lblLINK.AutoSize = true;
             this.lblLINK.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblLINK.Location = new System.Drawing.Point(113, 425);
-            this.lblLINK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLINK.Location = new System.Drawing.Point(151, 523);
             this.lblLINK.Name = "lblLINK";
-            this.lblLINK.Size = new System.Drawing.Size(100, 19);
+            this.lblLINK.Size = new System.Drawing.Size(123, 23);
             this.lblLINK.TabIndex = 14;
             this.lblLINK.TabStop = true;
             this.lblLINK.Text = "Iniciar Sesión";
@@ -146,10 +141,10 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRegistrar.Location = new System.Drawing.Point(71, 383);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrar.Location = new System.Drawing.Point(95, 471);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(186, 29);
+            this.btnRegistrar.Size = new System.Drawing.Size(248, 36);
             this.btnRegistrar.TabIndex = 13;
             this.btnRegistrar.Text = "REGISTRAR";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -158,37 +153,41 @@
             // img1
             // 
             this.img1.Image = ((System.Drawing.Image)(resources.GetObject("img1.Image")));
-            this.img1.Location = new System.Drawing.Point(117, 32);
-            this.img1.Margin = new System.Windows.Forms.Padding(2);
+            this.img1.Location = new System.Drawing.Point(156, 39);
+            this.img1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.img1.Name = "img1";
-            this.img1.Size = new System.Drawing.Size(76, 93);
+            this.img1.Size = new System.Drawing.Size(101, 114);
             this.img1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.img1.TabIndex = 12;
             this.img1.TabStop = false;
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(69, 228);
-            this.txtCedula.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCedula.Location = new System.Drawing.Point(92, 281);
+            this.txtCedula.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCedula.Name = "txtCedula";
-            this.txtCedula.Size = new System.Drawing.Size(187, 26);
+            this.txtCedula.Size = new System.Drawing.Size(248, 30);
             this.txtCedula.TabIndex = 11;
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(69, 334);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCorreo.Location = new System.Drawing.Point(92, 411);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(187, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(248, 30);
             this.txtCorreo.TabIndex = 9;
             // 
             // FrmRegistro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 491);
+            this.ClientSize = new System.Drawing.Size(1067, 604);
             this.Controls.Add(this.grpRegistro);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "FrmRegistro";
+            this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "REGISTRO";
             this.grpRegistro.ResumeLayout(false);
             this.grpRegistro.PerformLayout();
