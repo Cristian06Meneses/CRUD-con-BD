@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using static System.Windows.Forms.LinkLabel;
 
 namespace PantallaMaestra
 {
@@ -165,7 +167,6 @@ namespace PantallaMaestra
                 txt_correo.ReadOnly = false;
 
                 btn_editar.Text = "GUARDAR";
-                btn_crear.Visible = true;
             }
             else
             {
@@ -310,6 +311,11 @@ namespace PantallaMaestra
                 btn_editar.Visible = true;
                 btn_eliminar.Visible = true;
                 btn_crear.Visible = false;
+
+                txt_cedula.ReadOnly = true;
+                txt_nombre.ReadOnly = true;
+                txt_edad.ReadOnly = true;
+                txt_correo.ReadOnly = true;
             }
             catch
             {
@@ -332,6 +338,7 @@ namespace PantallaMaestra
             btn_crear.Visible = true;
             btn_editar.Visible = false;
             btn_eliminar.Visible = false;
+            btn_consultar.Visible = true;
 
             txt_cedula.Visible = true;
             txt_nombre.Visible = true;
@@ -339,6 +346,7 @@ namespace PantallaMaestra
             txt_correo.Visible = true;
 
             dgv_1.Visible = false;
+            dgv_2.Visible = false;
         }
 
         private void btn_cerrar_Click(object sender, EventArgs e)
@@ -353,6 +361,60 @@ namespace PantallaMaestra
             FrmPEsclavo esclavo = new FrmPEsclavo();
             esclavo.Show();
             this.Hide();
+        }
+
+        private void btn_cargar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog abrir = new OpenFileDialog();
+            abrir.Filter = "Archivos de texto (*.txt)|*.txt";
+            abrir.Title = "Seleccionar archivo de texto";
+
+            if (abrir.ShowDialog() == DialogResult.OK)
+            {
+                string nombre_archivo = abrir.FileName;
+
+                string[] lineas = File.ReadAllLines(nombre_archivo);
+
+                foreach (string line in lineas)
+                {
+                    string[] columnas = line.Split(';');
+
+                    if (columnas.Length >= 4)
+                    {
+                        dgv_2.Rows.Add(columnas[0], columnas[1], columnas[2], columnas[3]);
+                    }
+                }
+            }
+
+            dgv_2.Visible = true;
+            btn_consultar.Visible = false;
+        }
+
+        private void dgv_2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                txt_cedula.Text = dgv_2.CurrentRow.Cells[0].Value.ToString();
+                txt_nombre.Text = dgv_2.CurrentRow.Cells[1].Value.ToString();
+                txt_edad.Text = dgv_2.CurrentRow.Cells[2].Value.ToString();
+                txt_correo.Text = dgv_2.CurrentRow.Cells[3].Value.ToString();
+
+                txt_cedula.Visible = true;
+                txt_nombre.Visible = true;
+                txt_edad.Visible = true;
+                txt_correo.Visible = true;
+
+                btn_crear.Visible = true;
+
+                txt_cedula.ReadOnly = false;
+                txt_nombre.ReadOnly = false;
+                txt_edad.ReadOnly = false;
+                txt_correo.ReadOnly = false;
+            }
+            catch
+            {
+
+            }
         }
     }
 }

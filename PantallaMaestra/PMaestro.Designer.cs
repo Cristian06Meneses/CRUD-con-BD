@@ -53,55 +53,57 @@
             this.tableAdapterManager = new PantallaMaestra.db_MaestroDataSetTableAdapters.TableAdapterManager();
             this.btn_cerrar = new System.Windows.Forms.Button();
             this.btn_siguiente = new System.Windows.Forms.Button();
+            this.btn_cargar = new System.Windows.Forms.Button();
+            this.dgv_2 = new System.Windows.Forms.DataGridView();
+            this.cedula1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.edad1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.correo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_personaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_MaestroDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_2)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_cedula
             // 
             this.txt_cedula.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_cedula.Location = new System.Drawing.Point(68, 79);
-            this.txt_cedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_cedula.Location = new System.Drawing.Point(51, 64);
             this.txt_cedula.Name = "txt_cedula";
-            this.txt_cedula.Size = new System.Drawing.Size(324, 29);
+            this.txt_cedula.Size = new System.Drawing.Size(244, 24);
             this.txt_cedula.TabIndex = 0;
             // 
             // txt_correo
             // 
             this.txt_correo.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_correo.Location = new System.Drawing.Point(456, 199);
-            this.txt_correo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_correo.Location = new System.Drawing.Point(342, 162);
             this.txt_correo.Name = "txt_correo";
-            this.txt_correo.Size = new System.Drawing.Size(324, 29);
+            this.txt_correo.Size = new System.Drawing.Size(244, 24);
             this.txt_correo.TabIndex = 1;
             // 
             // txt_nombre
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.Location = new System.Drawing.Point(456, 79);
-            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_nombre.Location = new System.Drawing.Point(342, 64);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(324, 29);
+            this.txt_nombre.Size = new System.Drawing.Size(244, 24);
             this.txt_nombre.TabIndex = 2;
             // 
             // txt_edad
             // 
             this.txt_edad.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_edad.Location = new System.Drawing.Point(68, 199);
-            this.txt_edad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_edad.Location = new System.Drawing.Point(51, 162);
             this.txt_edad.Name = "txt_edad";
-            this.txt_edad.Size = new System.Drawing.Size(324, 29);
+            this.txt_edad.Size = new System.Drawing.Size(244, 24);
             this.txt_edad.TabIndex = 3;
             // 
             // lbl_cedula
             // 
             this.lbl_cedula.AutoSize = true;
             this.lbl_cedula.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_cedula.Location = new System.Drawing.Point(64, 57);
-            this.lbl_cedula.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_cedula.Location = new System.Drawing.Point(48, 46);
             this.lbl_cedula.Name = "lbl_cedula";
-            this.lbl_cedula.Size = new System.Drawing.Size(82, 20);
+            this.lbl_cedula.Size = new System.Drawing.Size(64, 15);
             this.lbl_cedula.TabIndex = 4;
             this.lbl_cedula.Text = "CEDULA";
             // 
@@ -109,10 +111,9 @@
             // 
             this.lbl_nombre.AutoSize = true;
             this.lbl_nombre.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombre.Location = new System.Drawing.Point(452, 57);
-            this.lbl_nombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_nombre.Location = new System.Drawing.Point(339, 46);
             this.lbl_nombre.Name = "lbl_nombre";
-            this.lbl_nombre.Size = new System.Drawing.Size(87, 20);
+            this.lbl_nombre.Size = new System.Drawing.Size(67, 15);
             this.lbl_nombre.TabIndex = 5;
             this.lbl_nombre.Text = "NOMBRE";
             // 
@@ -120,10 +121,9 @@
             // 
             this.lbl_edad.AutoSize = true;
             this.lbl_edad.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_edad.Location = new System.Drawing.Point(64, 177);
-            this.lbl_edad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_edad.Location = new System.Drawing.Point(48, 144);
             this.lbl_edad.Name = "lbl_edad";
-            this.lbl_edad.Size = new System.Drawing.Size(59, 20);
+            this.lbl_edad.Size = new System.Drawing.Size(46, 15);
             this.lbl_edad.TabIndex = 6;
             this.lbl_edad.Text = "EDAD";
             // 
@@ -131,10 +131,9 @@
             // 
             this.lbl_correo.AutoSize = true;
             this.lbl_correo.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_correo.Location = new System.Drawing.Point(452, 177);
-            this.lbl_correo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_correo.Location = new System.Drawing.Point(339, 144);
             this.lbl_correo.Name = "lbl_correo";
-            this.lbl_correo.Size = new System.Drawing.Size(84, 20);
+            this.lbl_correo.Size = new System.Drawing.Size(65, 15);
             this.lbl_correo.TabIndex = 7;
             this.lbl_correo.Text = "CORREO";
             // 
@@ -146,10 +145,9 @@
             this.btn_crear.FlatAppearance.BorderSize = 3;
             this.btn_crear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_crear.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_crear.Location = new System.Drawing.Point(839, 15);
-            this.btn_crear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_crear.Location = new System.Drawing.Point(629, 12);
             this.btn_crear.Name = "btn_crear";
-            this.btn_crear.Size = new System.Drawing.Size(196, 46);
+            this.btn_crear.Size = new System.Drawing.Size(147, 37);
             this.btn_crear.TabIndex = 8;
             this.btn_crear.Text = "CREAR";
             this.btn_crear.UseVisualStyleBackColor = false;
@@ -163,10 +161,9 @@
             this.btn_editar.FlatAppearance.BorderSize = 3;
             this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_editar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editar.Location = new System.Drawing.Point(839, 68);
-            this.btn_editar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_editar.Location = new System.Drawing.Point(629, 55);
             this.btn_editar.Name = "btn_editar";
-            this.btn_editar.Size = new System.Drawing.Size(196, 46);
+            this.btn_editar.Size = new System.Drawing.Size(147, 37);
             this.btn_editar.TabIndex = 9;
             this.btn_editar.Text = "EDITAR";
             this.btn_editar.UseVisualStyleBackColor = false;
@@ -181,10 +178,9 @@
             this.btn_eliminar.FlatAppearance.BorderSize = 3;
             this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_eliminar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar.Location = new System.Drawing.Point(839, 121);
-            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_eliminar.Location = new System.Drawing.Point(629, 98);
             this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(196, 46);
+            this.btn_eliminar.Size = new System.Drawing.Size(147, 37);
             this.btn_eliminar.TabIndex = 10;
             this.btn_eliminar.Text = "ELIMINAR";
             this.btn_eliminar.UseVisualStyleBackColor = false;
@@ -199,10 +195,9 @@
             this.btn_consultar.FlatAppearance.BorderSize = 3;
             this.btn_consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_consultar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_consultar.Location = new System.Drawing.Point(839, 174);
-            this.btn_consultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_consultar.Location = new System.Drawing.Point(629, 141);
             this.btn_consultar.Name = "btn_consultar";
-            this.btn_consultar.Size = new System.Drawing.Size(196, 46);
+            this.btn_consultar.Size = new System.Drawing.Size(147, 37);
             this.btn_consultar.TabIndex = 11;
             this.btn_consultar.Text = "CONSULTAR";
             this.btn_consultar.UseVisualStyleBackColor = false;
@@ -210,6 +205,8 @@
             // 
             // dgv_1
             // 
+            this.dgv_1.AllowUserToAddRows = false;
+            this.dgv_1.AllowUserToDeleteRows = false;
             this.dgv_1.AutoGenerateColumns = false;
             this.dgv_1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -219,11 +216,11 @@
             this.correoDataGridViewTextBoxColumn});
             this.dgv_1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgv_1.DataSource = this.tbl_personaBindingSource;
-            this.dgv_1.Location = new System.Drawing.Point(68, 297);
-            this.dgv_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_1.Location = new System.Drawing.Point(51, 241);
             this.dgv_1.Name = "dgv_1";
+            this.dgv_1.ReadOnly = true;
             this.dgv_1.RowHeadersWidth = 51;
-            this.dgv_1.Size = new System.Drawing.Size(713, 242);
+            this.dgv_1.Size = new System.Drawing.Size(535, 197);
             this.dgv_1.TabIndex = 12;
             this.dgv_1.Visible = false;
             this.dgv_1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_1_CellClick);
@@ -235,6 +232,7 @@
             this.cedulaDataGridViewTextBoxColumn.HeaderText = "cedula";
             this.cedulaDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.cedulaDataGridViewTextBoxColumn.Name = "cedulaDataGridViewTextBoxColumn";
+            this.cedulaDataGridViewTextBoxColumn.ReadOnly = true;
             this.cedulaDataGridViewTextBoxColumn.Width = 125;
             // 
             // nombreDataGridViewTextBoxColumn
@@ -243,6 +241,7 @@
             this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
             this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
             this.nombreDataGridViewTextBoxColumn.Width = 125;
             // 
             // edadDataGridViewTextBoxColumn
@@ -251,6 +250,7 @@
             this.edadDataGridViewTextBoxColumn.HeaderText = "edad";
             this.edadDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.edadDataGridViewTextBoxColumn.Name = "edadDataGridViewTextBoxColumn";
+            this.edadDataGridViewTextBoxColumn.ReadOnly = true;
             this.edadDataGridViewTextBoxColumn.Width = 125;
             // 
             // correoDataGridViewTextBoxColumn
@@ -259,6 +259,7 @@
             this.correoDataGridViewTextBoxColumn.HeaderText = "correo";
             this.correoDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.correoDataGridViewTextBoxColumn.Name = "correoDataGridViewTextBoxColumn";
+            this.correoDataGridViewTextBoxColumn.ReadOnly = true;
             this.correoDataGridViewTextBoxColumn.Width = 125;
             // 
             // tbl_personaBindingSource
@@ -279,10 +280,9 @@
             this.btn_limpiar.FlatAppearance.BorderSize = 3;
             this.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_limpiar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpiar.Location = new System.Drawing.Point(839, 226);
-            this.btn_limpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_limpiar.Location = new System.Drawing.Point(629, 184);
             this.btn_limpiar.Name = "btn_limpiar";
-            this.btn_limpiar.Size = new System.Drawing.Size(196, 46);
+            this.btn_limpiar.Size = new System.Drawing.Size(147, 37);
             this.btn_limpiar.TabIndex = 13;
             this.btn_limpiar.Text = "LIMPIAR";
             this.btn_limpiar.UseVisualStyleBackColor = false;
@@ -307,10 +307,9 @@
             this.btn_cerrar.FlatAppearance.BorderSize = 3;
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cerrar.Location = new System.Drawing.Point(839, 494);
-            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cerrar.Location = new System.Drawing.Point(629, 401);
             this.btn_cerrar.Name = "btn_cerrar";
-            this.btn_cerrar.Size = new System.Drawing.Size(196, 46);
+            this.btn_cerrar.Size = new System.Drawing.Size(147, 37);
             this.btn_cerrar.TabIndex = 15;
             this.btn_cerrar.Text = "CERRAR SESION";
             this.btn_cerrar.UseVisualStyleBackColor = false;
@@ -324,21 +323,80 @@
             this.btn_siguiente.FlatAppearance.BorderSize = 3;
             this.btn_siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_siguiente.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_siguiente.Location = new System.Drawing.Point(839, 441);
-            this.btn_siguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_siguiente.Location = new System.Drawing.Point(629, 358);
             this.btn_siguiente.Name = "btn_siguiente";
-            this.btn_siguiente.Size = new System.Drawing.Size(196, 46);
+            this.btn_siguiente.Size = new System.Drawing.Size(147, 37);
             this.btn_siguiente.TabIndex = 16;
             this.btn_siguiente.Text = "IR A M/DETALLE";
             this.btn_siguiente.UseVisualStyleBackColor = false;
             this.btn_siguiente.Click += new System.EventHandler(this.btn_siguiente_Click);
             // 
+            // btn_cargar
+            // 
+            this.btn_cargar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btn_cargar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_cargar.FlatAppearance.BorderColor = System.Drawing.Color.DarkBlue;
+            this.btn_cargar.FlatAppearance.BorderSize = 3;
+            this.btn_cargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cargar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cargar.Location = new System.Drawing.Point(629, 315);
+            this.btn_cargar.Name = "btn_cargar";
+            this.btn_cargar.Size = new System.Drawing.Size(147, 37);
+            this.btn_cargar.TabIndex = 17;
+            this.btn_cargar.Text = "CARGAR";
+            this.btn_cargar.UseVisualStyleBackColor = false;
+            this.btn_cargar.Click += new System.EventHandler(this.btn_cargar_Click);
+            // 
+            // dgv_2
+            // 
+            this.dgv_2.AllowUserToAddRows = false;
+            this.dgv_2.AllowUserToDeleteRows = false;
+            this.dgv_2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cedula1,
+            this.nombre1,
+            this.edad1,
+            this.correo1});
+            this.dgv_2.Location = new System.Drawing.Point(51, 241);
+            this.dgv_2.Name = "dgv_2";
+            this.dgv_2.ReadOnly = true;
+            this.dgv_2.RowHeadersWidth = 51;
+            this.dgv_2.Size = new System.Drawing.Size(535, 197);
+            this.dgv_2.TabIndex = 18;
+            this.dgv_2.Visible = false;
+            this.dgv_2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_2_CellClick);
+            // 
+            // cedula1
+            // 
+            this.cedula1.HeaderText = "Cedula";
+            this.cedula1.Name = "cedula1";
+            this.cedula1.ReadOnly = true;
+            // 
+            // nombre1
+            // 
+            this.nombre1.HeaderText = "Nombre";
+            this.nombre1.Name = "nombre1";
+            this.nombre1.ReadOnly = true;
+            // 
+            // edad1
+            // 
+            this.edad1.HeaderText = "Edad";
+            this.edad1.Name = "edad1";
+            this.edad1.ReadOnly = true;
+            // 
+            // correo1
+            // 
+            this.correo1.HeaderText = "Correo";
+            this.correo1.Name = "correo1";
+            this.correo1.ReadOnly = true;
+            // 
             // FrmPMaestro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_cargar);
             this.Controls.Add(this.btn_siguiente);
             this.Controls.Add(this.btn_cerrar);
             this.Controls.Add(this.btn_limpiar);
@@ -354,8 +412,8 @@
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.txt_correo);
             this.Controls.Add(this.txt_cedula);
+            this.Controls.Add(this.dgv_2);
             this.Controls.Add(this.dgv_1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FrmPMaestro";
             this.ShowIcon = false;
@@ -365,6 +423,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_personaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.db_MaestroDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -396,6 +455,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn correoDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btn_cerrar;
         private System.Windows.Forms.Button btn_siguiente;
+        private System.Windows.Forms.Button btn_cargar;
+        private System.Windows.Forms.DataGridView dgv_2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cedula1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombre1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn edad1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn correo1;
     }
 }
 
