@@ -59,7 +59,6 @@
             this.nombre1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.edad1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.correo1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnEportarXML = new System.Windows.Forms.Button();
             this.btnExportartxt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbl_personaBindingSource)).BeginInit();
@@ -71,7 +70,7 @@
             // 
             this.txt_cedula.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_cedula.Location = new System.Drawing.Point(68, 79);
-            this.txt_cedula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_cedula.Margin = new System.Windows.Forms.Padding(4);
             this.txt_cedula.Name = "txt_cedula";
             this.txt_cedula.Size = new System.Drawing.Size(324, 29);
             this.txt_cedula.TabIndex = 0;
@@ -80,7 +79,7 @@
             // 
             this.txt_correo.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_correo.Location = new System.Drawing.Point(456, 199);
-            this.txt_correo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_correo.Margin = new System.Windows.Forms.Padding(4);
             this.txt_correo.Name = "txt_correo";
             this.txt_correo.Size = new System.Drawing.Size(324, 29);
             this.txt_correo.TabIndex = 1;
@@ -89,7 +88,7 @@
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_nombre.Location = new System.Drawing.Point(456, 79);
-            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_nombre.Margin = new System.Windows.Forms.Padding(4);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(324, 29);
             this.txt_nombre.TabIndex = 2;
@@ -98,7 +97,7 @@
             // 
             this.txt_edad.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_edad.Location = new System.Drawing.Point(68, 199);
-            this.txt_edad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_edad.Margin = new System.Windows.Forms.Padding(4);
             this.txt_edad.Name = "txt_edad";
             this.txt_edad.Size = new System.Drawing.Size(324, 29);
             this.txt_edad.TabIndex = 3;
@@ -156,7 +155,7 @@
             this.btn_crear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_crear.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_crear.Location = new System.Drawing.Point(839, 15);
-            this.btn_crear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_crear.Margin = new System.Windows.Forms.Padding(4);
             this.btn_crear.Name = "btn_crear";
             this.btn_crear.Size = new System.Drawing.Size(196, 46);
             this.btn_crear.TabIndex = 8;
@@ -173,7 +172,7 @@
             this.btn_editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_editar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editar.Location = new System.Drawing.Point(839, 68);
-            this.btn_editar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_editar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(196, 46);
             this.btn_editar.TabIndex = 9;
@@ -191,7 +190,7 @@
             this.btn_eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_eliminar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_eliminar.Location = new System.Drawing.Point(839, 121);
-            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_eliminar.Name = "btn_eliminar";
             this.btn_eliminar.Size = new System.Drawing.Size(196, 46);
             this.btn_eliminar.TabIndex = 10;
@@ -209,7 +208,7 @@
             this.btn_consultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_consultar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_consultar.Location = new System.Drawing.Point(839, 174);
-            this.btn_consultar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_consultar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_consultar.Name = "btn_consultar";
             this.btn_consultar.Size = new System.Drawing.Size(196, 46);
             this.btn_consultar.TabIndex = 11;
@@ -231,7 +230,7 @@
             this.dgv_1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dgv_1.DataSource = this.tbl_personaBindingSource;
             this.dgv_1.Location = new System.Drawing.Point(68, 297);
-            this.dgv_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_1.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_1.Name = "dgv_1";
             this.dgv_1.ReadOnly = true;
             this.dgv_1.RowHeadersWidth = 51;
@@ -296,7 +295,7 @@
             this.btn_limpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_limpiar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_limpiar.Location = new System.Drawing.Point(839, 226);
-            this.btn_limpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_limpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_limpiar.Name = "btn_limpiar";
             this.btn_limpiar.Size = new System.Drawing.Size(196, 46);
             this.btn_limpiar.TabIndex = 13;
@@ -324,7 +323,7 @@
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cerrar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.Location = new System.Drawing.Point(839, 494);
-            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(196, 46);
             this.btn_cerrar.TabIndex = 15;
@@ -341,7 +340,7 @@
             this.btn_siguiente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_siguiente.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_siguiente.Location = new System.Drawing.Point(839, 441);
-            this.btn_siguiente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_siguiente.Margin = new System.Windows.Forms.Padding(4);
             this.btn_siguiente.Name = "btn_siguiente";
             this.btn_siguiente.Size = new System.Drawing.Size(196, 46);
             this.btn_siguiente.TabIndex = 16;
@@ -358,7 +357,7 @@
             this.btn_cargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cargar.Font = new System.Drawing.Font("Broadway", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cargar.Location = new System.Drawing.Point(839, 388);
-            this.btn_cargar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_cargar.Margin = new System.Windows.Forms.Padding(4);
             this.btn_cargar.Name = "btn_cargar";
             this.btn_cargar.Size = new System.Drawing.Size(196, 46);
             this.btn_cargar.TabIndex = 17;
@@ -377,7 +376,7 @@
             this.edad1,
             this.correo1});
             this.dgv_2.Location = new System.Drawing.Point(68, 297);
-            this.dgv_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_2.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_2.Name = "dgv_2";
             this.dgv_2.ReadOnly = true;
             this.dgv_2.RowHeadersWidth = 51;
@@ -418,18 +417,6 @@
             this.correo1.ReadOnly = true;
             this.correo1.Width = 125;
             // 
-            // btnEportarXML
-            // 
-            this.btnEportarXML.BackColor = System.Drawing.Color.LawnGreen;
-            this.btnEportarXML.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEportarXML.Location = new System.Drawing.Point(68, 556);
-            this.btnEportarXML.Name = "btnEportarXML";
-            this.btnEportarXML.Size = new System.Drawing.Size(194, 33);
-            this.btnEportarXML.TabIndex = 19;
-            this.btnEportarXML.Text = "EXPORTAR A EXCEL";
-            this.btnEportarXML.UseVisualStyleBackColor = false;
-            this.btnEportarXML.Click += new System.EventHandler(this.btnEportarXML_Click);
-            // 
             // btnExportartxt
             // 
             this.btnExportartxt.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -440,6 +427,7 @@
             this.btnExportartxt.TabIndex = 20;
             this.btnExportartxt.Text = "EXPORTAR A TXT";
             this.btnExportartxt.UseVisualStyleBackColor = false;
+            this.btnExportartxt.Visible = false;
             this.btnExportartxt.Click += new System.EventHandler(this.btnExportartxt_Click);
             // 
             // FrmPMaestro
@@ -449,7 +437,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1067, 601);
             this.Controls.Add(this.btnExportartxt);
-            this.Controls.Add(this.btnEportarXML);
             this.Controls.Add(this.btn_cargar);
             this.Controls.Add(this.btn_siguiente);
             this.Controls.Add(this.btn_cerrar);
@@ -466,9 +453,9 @@
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.txt_correo);
             this.Controls.Add(this.txt_cedula);
-            this.Controls.Add(this.dgv_2);
             this.Controls.Add(this.dgv_1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Controls.Add(this.dgv_2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmPMaestro";
             this.ShowIcon = false;
@@ -516,7 +503,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nombre1;
         private System.Windows.Forms.DataGridViewTextBoxColumn edad1;
         private System.Windows.Forms.DataGridViewTextBoxColumn correo1;
-        private System.Windows.Forms.Button btnEportarXML;
         private System.Windows.Forms.Button btnExportartxt;
     }
 }

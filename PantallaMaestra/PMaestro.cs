@@ -131,7 +131,7 @@ namespace PantallaMaestra
             txt_correo.Visible = false;
 
             btn_crear.Visible = false;
-
+            btnExportartxt.Visible = true;
             Conexion con = new Conexion();
 
             dgv_1.DataSource = con.vertabla();
@@ -418,55 +418,28 @@ namespace PantallaMaestra
             }
         }
 
-        private void exportarAexcel(DataGridView tabla)
-        {
-            Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
-
-            excel.Application.Workbooks.Add(true);
-
-            int indiceColumna = 0;
-            int indiceFila = 0;
-
-
-            foreach(DataGridViewColumn col in tabla.Columns) //columnas
-            {
-                indiceColumna++;
-
-                excel.Cells[1, indiceColumna] = col.Name;
-            }
-
-
-            foreach (DataRow row in tabla.Rows) // filas
-            {
-                indiceFila++;
-                indiceColumna = 0;
-
-                foreach (DataGridViewColumn col in tabla.Columns)
-                {
-                    indiceColumna++;
-                    excel.Cells[indiceFila + 1, indiceColumna] = row.Cells[col.Name].Value;
-                }
-            }
-            excel.Visible = true;
-        }
-
-        private void btnEportarXML_Click(object sender, EventArgs e)
-        {
-            exportarAexcel(dgv_2);
-        }
 
         private void btnExportartxt_Click(object sender, EventArgs e)
         {
-            TextWriter writer = new StreamWriter("C:\\Descargas");
-            for(int i = 0; i < dgv_2.Rows.Count-1; i++)
+            string nombreARCHIVO = "reporte de datos";
+            string Ruta_archivo ="C:\\Downloads";
+            
+            FileStream crear;
+
+            crear = File.Create(Ruta_archivo+nombreARCHIVO);
+            
+            crear.Close();
+            StreamWriter leer = new StreamWriter(Ruta_archivo + nombreARCHIVO);
+
+            for(int i = 0; i < dgv_1.Rows.Count-1; i++)
             {
-                for(int j = 0; j < dgv_2.Columns.Count;)
+                for(int j = 0; j < dgv_1.Columns.Count;)
                 {
-                    writer.Write("\t" + dgv_2.Rows[i].Cells[j].Value.ToString()+"\t"+";");
+                    leer.Write("\t" + dgv_1.Rows[i].Cells[j].Value.ToString()+"\t"+";");
                 }
-                writer.WriteLine("");
+                leer.WriteLine("");
             }
-            writer.Close();
+            leer.Close();
             MessageBox.Show("los datos han sido exportados con exito");
 
         }
