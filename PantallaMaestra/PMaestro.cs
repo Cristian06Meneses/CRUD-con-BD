@@ -468,6 +468,7 @@ namespace PantallaMaestra
             }
             writer.Close();
             MessageBox.Show("los datos han sido exportados con exito");
+
         }
     }
 }
