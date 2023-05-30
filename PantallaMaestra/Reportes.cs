@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PantallaMaestra
 {
@@ -195,5 +196,38 @@ namespace PantallaMaestra
             }
         }
 
+        private void btnExportartxt_Click(object sender, EventArgs e)
+        {
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Archivos de texto (*.txt)|*.txt";
+            saveFileDialog.Title = "Guardar como archivo de texto";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                // Agregar datos de las filas, omitiendo la primera fila
+                for (int rowIndex = 0; rowIndex < dgv_Reporte.Rows.Count; rowIndex++)
+                {
+                    DataGridViewRow fila = dgv_Reporte.Rows[rowIndex];
+
+                    foreach (DataGridViewCell celda in fila.Cells)
+                    {
+                        if (celda.Value != null)
+                        {
+                            sb.Append(celda.Value.ToString());
+                        }
+                        sb.Append(";");
+                    }
+                    sb.AppendLine();
+                }
+
+                // Guardar el contenido en el archivo seleccionado
+                File.WriteAllText(saveFileDialog.FileName, sb.ToString());
+
+                MessageBox.Show("El archivo se ha exportado correctamente.", "Exportar a archivo de texto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
