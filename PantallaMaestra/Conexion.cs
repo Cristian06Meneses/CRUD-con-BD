@@ -184,5 +184,20 @@ namespace PantallaMaestra
 
             return agregado;
         }
+        // query para los reportes
+        public DataTable Reporte(string codigo)
+        {
+            DataTable tabla = new DataTable();
+
+            string query = "SELECT tbl_esclavo.abono FROM tbl_esclavo " + codigo;
+            SqlCommand command = new SqlCommand(query, conec);
+            SqlDataAdapter adapter = new SqlDataAdapter(command);
+
+            adapter.Fill(tabla);
+
+            return tabla;
+        }
+
+
     }
 }
