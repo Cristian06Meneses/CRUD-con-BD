@@ -422,7 +422,7 @@ namespace PantallaMaestra
         private void btnExportartxt_Click(object sender, EventArgs e)
         {
             string nombreARCHIVO = "reporte de datos";
-            string Ruta_archivo ="C:\\Downloads";
+            string Ruta_archivo = "C:\\Users\\gookk\\Downloads\\";
             
             FileStream crear;
 
