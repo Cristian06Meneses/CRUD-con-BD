@@ -23,6 +23,7 @@ namespace PantallaMaestra
         int edad;
         string correo;
         int error = 0;
+        int cen = 0;
 
         public FrmPMaestro()
         {
@@ -56,6 +57,11 @@ namespace PantallaMaestra
             try
             {
                 edad = int.Parse(txt_edad.Text);
+
+                if (edad <= 18 || edad > 100)
+                {
+                    error = 1;
+                }
             }
             catch (Exception ex)
             {
@@ -160,14 +166,16 @@ namespace PantallaMaestra
 
         private void btn_editar_Click(object sender, EventArgs e)
         {
-            if (txt_cedula.ReadOnly == true)
+            if (cen == 0)
             {
-                txt_cedula.ReadOnly = false;
+                txt_cedula.ReadOnly = true;
                 txt_nombre.ReadOnly = false;
                 txt_edad.ReadOnly = false;
                 txt_correo.ReadOnly = false;
 
                 btn_editar.Text = "GUARDAR";
+
+                cen = 1;
             }
             else
             {
@@ -194,6 +202,11 @@ namespace PantallaMaestra
                 try
                 {
                     edad = int.Parse(txt_edad.Text);
+
+                    if (edad <= 18 || edad > 100)
+                    {
+                        error = 1;
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -250,6 +263,7 @@ namespace PantallaMaestra
                 dgv_1.DataSource = con.vertabla();
 
                 btn_editar.Text = "EDITAR";
+                cen = 0;
             }
         }
 
@@ -340,6 +354,7 @@ namespace PantallaMaestra
             btn_editar.Visible = false;
             btn_eliminar.Visible = false;
             btn_consultar.Visible = true;
+            btnExportartxt.Visible = false;
 
             txt_cedula.Visible = true;
             txt_nombre.Visible = true;

@@ -58,7 +58,7 @@ namespace PantallaMaestra
         public bool editar(int cedula, string nombre, int edad, string correo)
         {
             bool r = false;
-            string query = "update tbl_persona set cedula = " + cedula + ", nombre = '" + nombre + "', edad = " + edad + ", correo = '" + correo + "'";
+            string query = "update tbl_persona set  nombre = '" + nombre + "', edad = " + edad + ", correo = '" + correo + "' where cedula = " + cedula + "";
             cmd = new SqlCommand(query, conec);
 
             try

@@ -159,5 +159,12 @@ namespace PantallaMaestra
             login.Show();
             this.Hide();
         }
+
+        private void btn_reportes_Click(object sender, EventArgs e)
+        {
+            FrmReportes reportes = new FrmReportes();
+            reportes.Show();
+            this.Hide();
+        }
     }
 }

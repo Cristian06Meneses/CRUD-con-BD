@@ -50,6 +50,11 @@ namespace PantallaMaestra
             try
             {
                 edad = int.Parse(txtEdad.Text);
+
+                if (edad <= 18 || edad > 100)
+                {
+                    error = 1;
+                }
             }
             catch (Exception ex)
             {
