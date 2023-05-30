@@ -421,26 +421,35 @@ namespace PantallaMaestra
 
         private void btnExportartxt_Click(object sender, EventArgs e)
         {
-            string nombreARCHIVO = "reporte de datos";
-            string Ruta_archivo = "C:\\Users\\gookk\\Downloads\\";
-            
-            FileStream crear;
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Archivos de texto (*.txt)|*.txt";
+            saveFileDialog.Title = "Guardar como archivo de texto";
 
-            crear = File.Create(Ruta_archivo+nombreARCHIVO);
-            
-            crear.Close();
-            StreamWriter leer = new StreamWriter(Ruta_archivo + nombreARCHIVO);
-
-            for(int i = 0; i < dgv_1.Rows.Count-1; i++)
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
-                for(int j = 0; j < dgv_1.Columns.Count;)
+                StringBuilder sb = new StringBuilder();
+
+                // Agregar datos de las filas, omitiendo la primera fila
+                for (int rowIndex = 0; rowIndex < dgv_1.Rows.Count; rowIndex++)
                 {
-                    leer.Write("\t" + dgv_1.Rows[i].Cells[j].Value.ToString()+"\t"+";");
+                    DataGridViewRow fila = dgv_1.Rows[rowIndex];
+
+                    foreach (DataGridViewCell celda in fila.Cells)
+                    {
+                        if (celda.Value != null)
+                        {
+                            sb.Append(celda.Value.ToString());
+                        }
+                        sb.Append(";");
+                    }
+                    sb.AppendLine();
                 }
-                leer.WriteLine("");
+
+                // Guardar el contenido en el archivo seleccionado
+                File.WriteAllText(saveFileDialog.FileName, sb.ToString());
+
+                MessageBox.Show("El archivo se ha exportado correctamente.", "Exportar a archivo de texto", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            leer.Close();
-            MessageBox.Show("los datos han sido exportados con exito");
 
         }
     }

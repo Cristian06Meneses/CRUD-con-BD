@@ -453,8 +453,8 @@
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.txt_correo);
             this.Controls.Add(this.txt_cedula);
-            this.Controls.Add(this.dgv_1);
             this.Controls.Add(this.dgv_2);
+            this.Controls.Add(this.dgv_1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "FrmPMaestro";
